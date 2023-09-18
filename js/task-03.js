@@ -22,11 +22,12 @@ const galleryHTML = images.map((image) => `
 galleryElement.innerHTML = galleryHTML.join('');
 const image = document.querySelectorAll('img');
 image.forEach((x) => {
-  x.style.width = '200px';
-  x.style.height = '100px';
+  x.style.width = '30vh';
+  x.style.height = 'auto';
 })
 galleryElement.style.display = 'flex';
 galleryElement.style.gap = '20px'
+galleryElement.style.listStyleType = 'none';
 // console.log(galleryElement.children);
 // galleryElement.children.forEach((x) => {
 //   x.style.width = '20px';
